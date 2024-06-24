@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+
+    <style>
+      body {
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f2f2f2;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 80%;
+        padding: 30px;
+        border-radius: 8px;
+        background-color: #fff;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .image-container {
+        width: 40%;
+        margin-left: 20px;
+      }
+      .image-container img {
+        width: 100%;
+        border-radius: 8px;
+      }
+      .SignUp {
+        width: 60%;
+      }
+
+      .SignUp-form {
+        width: 100%;
+      }
+
+      .SignUp-form label {
+        display: block;
+        margin-left: 50px;
+        margin-bottom: 5px;
+      }
+      .SignUp-form h1 {
+        margin-left: 50px;
+      }
+      .SignUp-form h3 {
+        margin-left: 50px;
+      }
+      .SignUp-form input {
+        width: 60%;
+        padding: 10px;
+        margin-left: 50px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      .SignUp-Login {
+        background-color: #0056b3;
+        color: #fff;
+        padding: 12px 20px;
+        border: none;
+        margin-left: 50px;
+        width: 60%;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .sign-option {
+        display: inline-block;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+      }
+      .Google {
+        margin-left: 35px;
+        background-color: #f2f2f2a1;
+        width: 160px;
+      }
+      .Apple {
+        padding-left: 20px;
+        width: 160px;
+      }
+      .Google-button {
+        font-size: 13px;
+      }
+      .Apple-button {
+        font-size: 13px;
+      }
+      .SignUp-form button:hover {
+        background-color: #0056b3;
+      }
+
+      .SignUp-form.checkbox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+        margin-right: 15px;
+      }
+      .SignUp-form h5 a {
+        color: #004cff;
+        text-decoration: none;
+      }
+      .SignUp-form h5 a:hover {
+        text-decoration: underline;
+      }
+      .SignUp-form h5 {
+        float: right;
+        margin-top: 1px;
+        margin-bottom: 5px;
+        margin-right: 18em;
+      }
+      .SignUp-form h6 {
+        margin-left: 200px;
+      }
+
+      .checkbox input[type="checkbox"] {
+        margin-right: 5px;
+        margin-left: 0;
+        width: auto;
+      }
+      .checkbox a {
+        color: #004cff;
+        text-decoration: none;
+      }
+      .checkbox a:hover {
+        text-decoration: underline;
+      }
+      .SignUp-form p {
+        margin-left: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="SignUp">
+        <form class="SignUp-form" action="signup.php" method="post">
+          <h1>Get Started Now</h1>
+          <label for="name">Name:</label>
+          <input type="name" name="name" id="name" required />
+
+          <label for="email">Email Address:</label>
+          <input type="email" name="email" id="email" required />
+          <label for="password"
+            >Password:
+            <h5><a href="">forgot password</a></h5></label
+          >
+          <input type="password" name="password" id="password" required />
+
+          <div class="checkbox">
+            <label for="rememberme">
+              <input type="checkbox" name="Remember-me" />
+              I agree to the <a href="">terms & policy</a></label
+            >
+          </div>
+          <button class="SignUp-Login" type="SignUp">Create Account</button>
+          <h6>Or</h6>
+          <div class="sign-option">
+            <div class="Google">
+              <button class="Google-button" type="button">
+                <img src="image/Google.svg" alt="Google Logo" />
+                Sign up with Google
+              </button>
+            </div>
+            <div class="Apple">
+              <button class="Apple-button" type="button">
+                <img src="image/Apple.svg" alt="Apple Logo" />
+                Sign up with Apple
+              </button>
+            </div>
+          </div>
+          <p class="signup">
+            Have an account? <a href="SignIn.html">Sign In</a>
+          </p>
+        </form>
+      </div>
+      <div class="image-container">
+        <img src="image/Side_right.png" alt="Image" />
+      </div>
+    </div>
+  </body>
+</html>
